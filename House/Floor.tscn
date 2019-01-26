@@ -11,8 +11,8 @@ extents = Vector2( 10, 10 )
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-position = Vector2( 17.0683, 1.20573 )
-scale = Vector2( 0.893642, 0.0790087 )
+position = Vector2( 18.0683, -3.2281 )
+scale = Vector2( 0.893642, 0.269449 )
 texture = ExtResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
