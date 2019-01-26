@@ -2,8 +2,9 @@
 
 extends KinematicBody2D
 
-const GRAVITY = 200.0
-const WALK_SPEED = 200
+const GRAVITY = 800
+const WALK_SPEED = 600
+const JUMP_SPEED = -600
 
 var velocity = Vector2()
 
@@ -17,7 +18,7 @@ func _physics_process(delta):
 	else:
 		velocity.x = 0
 	if is_on_floor() and Input.is_action_just_pressed("ui_up"):
-		velocity.y = -GRAVITY
+		velocity.y = JUMP_SPEED
 
 	# We don't need to multiply velocity by delta because MoveAndSlide already takes delta time into account.
 	
