@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 9.84616, 306.858 )
+extents = Vector2( 9.84616, 523.565 )
 
 [node name="Fridge" type="Node2D"]
 
@@ -23,9 +23,11 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
 
-position = Vector2( 2.85152, 0 )
-scale = Vector2( 13, 1 )
+position = Vector2( -4.01215, -251.071 )
+rotation = 3.14159
+scale = Vector2( 12.4657, 0.109209 )
 shape = SubResource( 1 )
+one_way_collision = true
 _sections_unfolded = [ "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
