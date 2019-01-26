@@ -16,6 +16,8 @@ func _physics_process(delta):
 		velocity.x =  WALK_SPEED
 	else:
 		velocity.x = 0
+	if Input.is_action_just_pressed("ui_up"):
+		velocity.y = -GRAVITY
 
 	# We don't need to multiply velocity by delta because MoveAndSlide already takes delta time into account.
 	
