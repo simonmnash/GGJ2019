@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://House/Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Characters/Cat.tscn" type="PackedScene" id=2]
 [ext_resource path="res://House/Fridge.tscn" type="PackedScene" id=3]
+[ext_resource path="res://House/Stove.tscn" type="PackedScene" id=4]
 
 [node name="House" type="Node" index="0"]
 
@@ -17,5 +18,9 @@ position = Vector2( 77.9064, 431.821 )
 [node name="Fridge" parent="." index="2" instance=ExtResource( 3 )]
 
 position = Vector2( 731.606, 247.656 )
+
+[node name="Fridge2" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 414.65, 405.332 )
 
 
