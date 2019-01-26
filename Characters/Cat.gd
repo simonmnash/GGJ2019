@@ -14,12 +14,16 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_left"):
 		velocity.x = -WALK_SPEED
 		if is_on_floor():
-			$AnimatedSprite.play("walk")
-
+			$AnimatedSprite.play("walk_left")
+		else:
+			$AnimatedSprite.play("jump_left")
+	
 	elif Input.is_action_pressed("ui_right"):
 		velocity.x =  WALK_SPEED
 		if is_on_floor():
-			$AnimatedSprite.play("walk")
+			$AnimatedSprite.play("walk_right")
+		else:
+			$AnimatedSprite.play("jump_right")
 	else:
 		velocity.x = 0
 		$AnimatedSprite.play("default")
@@ -29,6 +33,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_down"):
 		position.y += 1
 	if Input.is_action_just_pressed("attack"):
+		$AnimatedSprite.play("attack")
 		$Attack.get_node("CollisionShape2D").disabled = false
 
 	# We don't need to multiply velocity by delta because MoveAndSlide already takes delta time into account.
