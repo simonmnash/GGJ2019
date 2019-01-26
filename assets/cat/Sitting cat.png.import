@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sitting cat.png-05bbd13f06bc1bd36cf18def1d5df246.stex"
+path="res://.import/Sitting cat.png-781a7cc78e42c88d590c46277b766dde.stex"
 
 [deps]
 
-source_file="res://assets/Sitting cat.png"
-dest_files=[ "res://.import/Sitting cat.png-05bbd13f06bc1bd36cf18def1d5df246.stex" ]
+source_file="res://assets/cat/Sitting cat.png"
+dest_files=[ "res://.import/Sitting cat.png-781a7cc78e42c88d590c46277b766dde.stex" ]
 
 [params]
 
