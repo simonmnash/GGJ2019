@@ -12,7 +12,7 @@ extents = Vector2( 9.84616, 10.3732 )
 custom_solver_bias = 0.0
 extents = Vector2( 120.394, 10 )
 
-[node name="Bookshelf" type="Node2D" index="0"]
+[node name="Bookshelf" type="Node2D"]
 
 _sections_unfolded = [ "Transform" ]
 
