@@ -8,14 +8,14 @@
 
 [node name="Floor" parent="." index="0" instance=ExtResource( 1 )]
 
-position = Vector2( 995.26, 584.174 )
+position = Vector2( 554.692, 567.47 )
 
 [node name="Cat" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 71.0901, 463.63 )
+position = Vector2( 77.9064, 431.821 )
 
 [node name="Fridge" parent="." index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 894.526, 270.221 )
+position = Vector2( 731.606, 247.656 )
 
 
