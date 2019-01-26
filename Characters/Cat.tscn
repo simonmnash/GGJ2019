@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Characters/Cat.gd" type="Script" id=1]
 [ext_resource path="res://assets/Sitting cat.png" type="Texture" id=2]
+[ext_resource path="res://assets/cat/Jumping cat.png" type="Texture" id=3]
+[ext_resource path="res://assets/cat/Standing cat.png" type="Texture" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -10,6 +12,16 @@ animations = [ {
 "loop": true,
 "name": "default",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -17,7 +29,7 @@ animations = [ {
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Cat" type="KinematicBody2D"]
+[node name="Cat" type="KinematicBody2D" index="0"]
 
 scale = Vector2( 0.5, 0.5 )
 input_pickable = false
