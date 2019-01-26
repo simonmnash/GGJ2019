@@ -33,6 +33,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_down"):
 		position.y += 1
 	if Input.is_action_just_pressed("attack"):
+		$AnimatedSprite.play("attack")
 		$Attack.get_node("CollisionShape2D").disabled = false
 
 	# We don't need to multiply velocity by delta because MoveAndSlide already takes delta time into account.
