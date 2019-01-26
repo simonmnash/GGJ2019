@@ -7,7 +7,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10.0566, 10.1245 )
 
-[node name="Fridge" type="Node2D" index="0"]
+[node name="End Table" type="Node2D" index="0"]
 
 _sections_unfolded = [ "Transform" ]
 
