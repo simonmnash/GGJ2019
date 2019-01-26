@@ -9,7 +9,7 @@
 [ext_resource path="res://House/End Table.tscn" type="PackedScene" id=7]
 [ext_resource path="res://House/Picture.tscn" type="PackedScene" id=8]
 
-[node name="House" type="Node" index="0"]
+[node name="House" type="Node"]
 
 [node name="Floor" parent="." index="0" instance=ExtResource( 1 )]
 
