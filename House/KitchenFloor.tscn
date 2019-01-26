@@ -1,15 +1,13 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/floor.png" type="Texture" id=1]
+[ext_resource path="res://assets/kitchen_floor.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Floor" type="Node2D"]
-
-_sections_unfolded = [ "Transform" ]
+[node name="KitchenFloor" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
