@@ -22,3 +22,6 @@ func _on_Area2D_body_entered(body):
 	else:
 		direction = "left"
 		$AnimatedSprite.play("walk_left")
+
+func _on_Hitbox_area_entered(area):
+	print("dog hit")
