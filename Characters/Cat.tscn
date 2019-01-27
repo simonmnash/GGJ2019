@@ -2,12 +2,12 @@
 
 [ext_resource path="res://Characters/Cat.gd" type="Script" id=1]
 [ext_resource path="res://assets/cat/Sitting cat.png" type="Texture" id=2]
-[ext_resource path="res://assets/cat/Sitting cat hitting.png" type="Texture" id=3]
+[ext_resource path="res://assets/cat/Jumping cat left.png" type="Texture" id=3]
 [ext_resource path="res://assets/cat/Jumping cat.png" type="Texture" id=4]
 [ext_resource path="res://assets/cat/Sleeping Cat.png" type="Texture" id=5]
 [ext_resource path="res://assets/cat/Standing cat.png" type="Texture" id=6]
 [ext_resource path="res://assets/cat/Standing cat left.png" type="Texture" id=7]
-[ext_resource path="res://assets/cat/Jumping cat left.png" type="Texture" id=8]
+[ext_resource path="res://assets/cat/Sitting cat hitting.png" type="Texture" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -19,7 +19,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "attack",
+"name": "jump_left",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
@@ -44,7 +44,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "jump_left",
+"name": "attack",
 "speed": 5.0
 } ]
 
@@ -58,7 +58,7 @@ extents = Vector2( 10, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 18.8689, 10 )
 
-[node name="Cat" type="KinematicBody2D" index="0"]
+[node name="Cat" type="KinematicBody2D"]
 
 scale = Vector2( 0.5, 0.5 )
 z_index = 1
