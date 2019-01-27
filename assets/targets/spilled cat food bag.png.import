@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pillow.png-5440a4f3ea9a72234202eaec09d0fedd.stex"
+path="res://.import/spilled cat food bag.png-b1d2aa66066eb68fb9045a8f63a8242b.stex"
 
 [deps]
 
-source_file="res://assets/pillow.png"
-dest_files=[ "res://.import/pillow.png-5440a4f3ea9a72234202eaec09d0fedd.stex" ]
+source_file="res://assets/targets/spilled cat food bag.png"
+dest_files=[ "res://.import/spilled cat food bag.png-b1d2aa66066eb68fb9045a8f63a8242b.stex" ]
 
 [params]
 

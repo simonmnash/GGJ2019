@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/picture frame.png-2c4d7af865bbd3d48ede50bb5a6cc224.stex"
+path="res://.import/cat food bagt.png-6030c1b1a0e9bb2aa6ab1b85abfbc2a7.stex"
 
 [deps]
 
-source_file="res://assets/picture frame.png"
-dest_files=[ "res://.import/picture frame.png-2c4d7af865bbd3d48ede50bb5a6cc224.stex" ]
+source_file="res://assets/targets/cat food bagt.png"
+dest_files=[ "res://.import/cat food bagt.png-6030c1b1a0e9bb2aa6ab1b85abfbc2a7.stex" ]
 
 [params]
 
