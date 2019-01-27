@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://House/Wall.tscn" type="PackedScene" id=1]
 [ext_resource path="res://House/Kitchen_Wall.tscn" type="PackedScene" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://Targets/Book5.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Targets/Book6.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Targets/Book7.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Targets/PictureFrame.tscn" type="PackedScene" id=26]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -368,5 +369,10 @@ scale = Vector2( 0.643835, 0.785822 )
 
 position = Vector2( 1286.08, 178.786 )
 scale = Vector2( 0.562525, 0.681412 )
+
+[node name="PictureFrame" parent="." index="30" instance=ExtResource( 26 )]
+
+position = Vector2( 1200.78, 43.4826 )
+scale = Vector2( 0.286349, 0.338661 )
 
 
