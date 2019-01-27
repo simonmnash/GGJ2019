@@ -9,18 +9,32 @@ const JUMP_SPEED = -600
 var velocity = Vector2()
 
 func _physics_process(delta):
+	$Attack.get_node("CollisionShape2D").disabled = true
 	velocity.y += delta * GRAVITY
-	
 	if Input.is_action_pressed("ui_left"):
 		velocity.x = -WALK_SPEED
+		if is_on_floor():
+			$AnimatedSprite.play("walk_left")
+		else:
+			$AnimatedSprite.play("jump_left")
+	
 	elif Input.is_action_pressed("ui_right"):
 		velocity.x =  WALK_SPEED
+		if is_on_floor():
+			$AnimatedSprite.play("walk_right")
+		else:
+			$AnimatedSprite.play("jump_right")
 	else:
 		velocity.x = 0
+		$AnimatedSprite.play("default")
 	if is_on_floor() and Input.is_action_just_pressed("ui_up"):
 		velocity.y = JUMP_SPEED
+		$AnimatedSprite.play("jump")
 	if Input.is_action_pressed("ui_down"):
 		position.y += 1
+	if Input.is_action_just_pressed("attack"):
+		$AnimatedSprite.play("attack")
+		$Attack.get_node("CollisionShape2D").disabled = false
 
 	# We don't need to multiply velocity by delta because MoveAndSlide already takes delta time into account.
 	
