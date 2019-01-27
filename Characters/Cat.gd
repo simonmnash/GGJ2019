@@ -7,13 +7,18 @@ const WALK_SPEED = 600
 const JUMP_SPEED = -600
 
 var velocity = Vector2()
+func _ready():
+	$AnimatedSprite.play("default")
 
 func _physics_process(delta):
+	
 	$Attack.get_node("CollisionShape2D").disabled = true
 	velocity.y += delta * GRAVITY
 	if is_on_floor() and velocity.x == 0 and Input.is_action_pressed("sleep"):
 		$AnimatedSprite.play("sleep")
+		$Z.show()
 	else:
+		$Z.hide()
 		if Input.is_action_pressed("ui_left"):
 			velocity.x = -WALK_SPEED
 			if is_on_floor():
