@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://House.gd" type="Script" id=1]
 [ext_resource path="res://House/Wall.tscn" type="PackedScene" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://Targets/Book6.tscn" type="PackedScene" id=25]
 [ext_resource path="res://Targets/Book7.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Targets/PictureFrame.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/menu/Roboto-Bold.ttf" type="DynamicFontData" id=28]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -37,6 +38,14 @@ extents = Vector2( 10, 15.3654 )
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
+
+[sub_resource type="DynamicFont" id=3]
+
+size = 50
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 28 )
+_sections_unfolded = [ "Font", "Settings" ]
 
 [node name="House" type="Node" index="0"]
 
@@ -385,6 +394,7 @@ scale = Vector2( 0.286349, 0.338661 )
 
 [node name="DisableFloor" type="Area2D" parent="." index="31"]
 
+editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -401,6 +411,39 @@ _sections_unfolded = [ "Collision" ]
 position = Vector2( 1539.87, 561.052 )
 scale = Vector2( 195.141, 4.58689 )
 shape = SubResource( 2 )
+
+[node name="Score" type="RichTextLabel" parent="." index="32"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 27.0
+margin_top = 78.0
+margin_right = 434.0
+margin_bottom = 180.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 3 )
+custom_colors/default_color = Color( 0.0107422, 0.0396957, 0.171875, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Score"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "custom_colors" ]
+
+[connection signal="dog_hit" from="Dog" to="." method="_on_Dog_dog_hit"]
 
 [connection signal="area_entered" from="DisableFloor" to="." method="_on_DisableFloor_area_entered"]
 

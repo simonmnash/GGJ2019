@@ -1,21 +1,14 @@
 extends Node
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
-
-func _ready():
-	# Called when the node is added to the scene for the first time.
-	# Initialization here
-	pass
-
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass
+var score = -100
 
 
 func _on_DisableFloor_area_entered(area):
 	if area.get_parent().is_in_group("dog_harassers"):
 		area.get_node("CollisionShape2D").disabled = true
 
+
+
+func _on_Dog_dog_hit():
+	score = score + 100
+	$Score.text = "SCORE: " + str(score)

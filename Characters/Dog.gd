@@ -5,7 +5,7 @@ extends KinematicBody2D
 
 var walk_speed = 400
 var direction = "left"
-
+signal dog_hit
 var velocity = Vector2()
 
 func _physics_process(delta):
@@ -24,4 +24,4 @@ func _on_Area2D_body_entered(body):
 		$AnimatedSprite.play("walk_left")
 
 func _on_Hitbox_area_entered(area):
-	print("dog hit")
+	emit_signal("dog_hit")
