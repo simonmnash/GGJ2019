@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/picture frame broken.png-936669d3544d5742523bb189adea0db6.stex"
+path="res://.import/dog food bag2.png-d13d7239651c67a139f3a4eabedb53ae.stex"
 
 [deps]
 
-source_file="res://assets/picture frame broken.png"
-dest_files=[ "res://.import/picture frame broken.png-936669d3544d5742523bb189adea0db6.stex" ]
+source_file="res://assets/targets/dog food bag2.png"
+dest_files=[ "res://.import/dog food bag2.png-d13d7239651c67a139f3a4eabedb53ae.stex" ]
 
 [params]
 

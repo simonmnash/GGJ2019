@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/credits.png-01213cce558d25bfcd116f6e71946471.stex"
+path="res://.import/picture frame.png-9aa766bd40644b668b36c5c69fb60193.stex"
 
 [deps]
 
-source_file="res://assets/menu/credits.png"
-dest_files=[ "res://.import/credits.png-01213cce558d25bfcd116f6e71946471.stex" ]
+source_file="res://assets/targets/picture frame.png"
+dest_files=[ "res://.import/picture frame.png-9aa766bd40644b668b36c5c69fb60193.stex" ]
 
 [params]
 

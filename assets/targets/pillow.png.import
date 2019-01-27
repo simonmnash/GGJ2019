@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/credits.png-01213cce558d25bfcd116f6e71946471.stex"
+path="res://.import/pillow.png-a16fd2fdfcf2b5661c3b105ba9704453.stex"
 
 [deps]
 
-source_file="res://assets/menu/credits.png"
-dest_files=[ "res://.import/credits.png-01213cce558d25bfcd116f6e71946471.stex" ]
+source_file="res://assets/targets/pillow.png"
+dest_files=[ "res://.import/pillow.png-a16fd2fdfcf2b5661c3b105ba9704453.stex" ]
 
 [params]
 
