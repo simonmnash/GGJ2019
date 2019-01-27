@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fruit bowl broken.png-218c85c57bec7bcaa369679f189fae7f.stex"
+path="res://.import/fruit bowl broken.png-ff917f49dcaa76615c36581ae27070ca.stex"
 
 [deps]
 
-source_file="res://assets/fruit bowl broken.png"
-dest_files=[ "res://.import/fruit bowl broken.png-218c85c57bec7bcaa369679f189fae7f.stex" ]
+source_file="res://assets/targets/fruit bowl broken.png"
+dest_files=[ "res://.import/fruit bowl broken.png-ff917f49dcaa76615c36581ae27070ca.stex" ]
 
 [params]
 

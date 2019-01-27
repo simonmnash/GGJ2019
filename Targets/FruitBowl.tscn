@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Targets/Vase.gd" type="Script" id=1]
-[ext_resource path="res://assets/targets/vase.png" type="Texture" id=2]
-[ext_resource path="res://assets/targets/broken_vase.png" type="Texture" id=3]
+[ext_resource path="res://assets/targets/fruit bowl.png" type="Texture" id=2]
+[ext_resource path="res://assets/targets/fruit bowl broken.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+extents = Vector2( 18.6158, 10 )
 
 [sub_resource type="SpriteFrames" id=2]
 
@@ -26,9 +26,9 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+extents = Vector2( 23.4656, 10 )
 
-[node name="Vase" type="Node2D" groups=[
+[node name="FruitBowl" type="Node2D" groups=[
 "dog_harassers",
 ]]
 
