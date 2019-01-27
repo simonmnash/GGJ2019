@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fruit bowl.png-8640b4d3b6ec69394650ac053d556dd7.stex"
+path="res://.import/cat food bagt.png-2dc965d16b85cc2521b123fab5dad120.stex"
 
 [deps]
 
-source_file="res://assets/fruit bowl.png"
-dest_files=[ "res://.import/fruit bowl.png-8640b4d3b6ec69394650ac053d556dd7.stex" ]
+source_file="res://assets/cat food bagt.png"
+dest_files=[ "res://.import/cat food bagt.png-2dc965d16b85cc2521b123fab5dad120.stex" ]
 
 [params]
 
