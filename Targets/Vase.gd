@@ -16,5 +16,6 @@ func _ready():
 
 
 func _on_Area2D_area_entered(area):
-	self.move_local_y(200)
+	self.move_local_y(190)
 	$AnimatedSprite.play("broken")
+	self.z_index = 0

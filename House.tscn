@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://House/Wall.tscn" type="PackedScene" id=1]
 [ext_resource path="res://House/Kitchen_Wall.tscn" type="PackedScene" id=2]
@@ -12,8 +12,14 @@
 [ext_resource path="res://House/Sink.tscn" type="PackedScene" id=10]
 [ext_resource path="res://House/Bookshelf.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Characters/Cat.tscn" type="PackedScene" id=12]
-[ext_resource path="res://House/End Table.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Targets/Vase.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Characters/Dog.tscn" type="PackedScene" id=13]
+[ext_resource path="res://House/End Table.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Targets/Vase.tscn" type="PackedScene" id=15]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 15.3654 )
 
 [node name="House" type="Node"]
 
@@ -253,16 +259,54 @@ scale = Vector2( 1.00023, 0.754339 )
 
 position = Vector2( 200.719, 490.283 )
 
-[node name="End Table" parent="." index="14" instance=ExtResource( 13 )]
+[node name="Dog" parent="." index="14" instance=ExtResource( 13 )]
+
+position = Vector2( -165.33, 501.683 )
+
+[node name="End Table" parent="." index="15" instance=ExtResource( 14 )]
 
 position = Vector2( -139.77, 437.945 )
 
-[node name="End Table2" parent="." index="15" instance=ExtResource( 13 )]
+[node name="End Table2" parent="." index="16" instance=ExtResource( 14 )]
 
 position = Vector2( 1737.8, 433.286 )
 
-[node name="Vase" parent="." index="16" instance=ExtResource( 14 )]
+[node name="Vase" parent="." index="17" instance=ExtResource( 15 )]
 
 position = Vector2( -144.928, 370.298 )
+
+[node name="LeftWall" type="StaticBody2D" parent="." index="18"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" index="0"]
+
+position = Vector2( -421.354, 134.256 )
+scale = Vector2( 3.44749, 27.7402 )
+shape = SubResource( 1 )
+
+[node name="RightWall" type="StaticBody2D" parent="." index="19"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" index="0"]
+
+position = Vector2( 2998.96, 134.256 )
+scale = Vector2( 3.44749, 27.7402 )
+shape = SubResource( 1 )
 
 
