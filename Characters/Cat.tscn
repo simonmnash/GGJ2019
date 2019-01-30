@@ -6,12 +6,12 @@
 [ext_resource path="res://assets/cat/Stitting cat 2 paw lick.png" type="Texture" id=4]
 [ext_resource path="res://assets/cat/Stitting cat 2 yawn.png" type="Texture" id=5]
 [ext_resource path="res://assets/cat/Stitting cat 2.png" type="Texture" id=6]
-[ext_resource path="res://assets/cat/Jumping cat left.png" type="Texture" id=7]
-[ext_resource path="res://assets/cat/Jumping cat.png" type="Texture" id=8]
-[ext_resource path="res://assets/cat/Sleeping Cat.png" type="Texture" id=9]
-[ext_resource path="res://assets/cat/Sitting cat hitting.png" type="Texture" id=10]
-[ext_resource path="res://assets/cat/Standing cat left.png" type="Texture" id=11]
-[ext_resource path="res://assets/cat/Standing cat.png" type="Texture" id=12]
+[ext_resource path="res://assets/cat/Jumping cat.png" type="Texture" id=7]
+[ext_resource path="res://assets/cat/Sleeping Cat.png" type="Texture" id=8]
+[ext_resource path="res://assets/cat/Sitting cat hitting.png" type="Texture" id=9]
+[ext_resource path="res://assets/cat/Standing cat left.png" type="Texture" id=10]
+[ext_resource path="res://assets/cat/Standing cat.png" type="Texture" id=11]
+[ext_resource path="res://assets/cat/Jumping cat left.png" type="Texture" id=12]
 [ext_resource path="res://Characters/Z.tscn" type="PackedScene" id=13]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -24,32 +24,32 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
-"name": "jump_left",
+"name": "jump_right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "jump_right",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
 "name": "sleep",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "attack",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ) ],
+"frames": [ ExtResource( 10 ) ],
 "loop": true,
 "name": "walk_left",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ) ],
+"frames": [ ExtResource( 11 ) ],
 "loop": true,
 "name": "walk_right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "jump_left",
 "speed": 5.0
 } ]
 
@@ -63,7 +63,7 @@ extents = Vector2( 10, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 18.8689, 10 )
 
-[node name="Cat" type="KinematicBody2D" index="0"]
+[node name="Cat" type="KinematicBody2D"]
 
 scale = Vector2( 0.5, 0.5 )
 z_index = 1
@@ -78,7 +78,7 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 frames = SubResource( 1 )
 animation = "default"
-frame = 9
+frame = 5
 playing = true
 _sections_unfolded = [ "Transform" ]
 
